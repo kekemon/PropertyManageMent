@@ -27,11 +27,7 @@
       </property>
       
       <!-- List of XML mapping files -->
-      <mapping resource = "Hbm.Building.xml"/>
-      <mapping resource = "Hbm.Flat.xml"/>
-      <mapping resource = "Hbm.Owner.xml"/>
-      <mapping resource = "Hbm.Image.xml"/>
-      <mapping resource = "Hbm.Video.xml"/>
+      <mapping resource = "Hbm.Models.xml"/>
       
    </session-factory>
 </hibernate-configuration>
