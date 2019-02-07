@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="Building" table="Building">
+
+		<meta attribute="class-description">
+			This class contains the Building detail.
+		</meta>
+
+		<id name="id" type="int" column="idBuilding">
+			<generator class="native" />
+		</id>
+		<property name="number" column="BuildingNumber" type="string" />
+		<property name="address" column="BuildingAddress" type="string" />
+		
+		<set name="flats" cascade="all">
+			<key column="idBuilding" />
+			<one-to-many class="Flat" />
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Video" table = "Video">
+      
+      <meta attribute = "class-description">
+         This class contains the Flat Video detail. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "idVideo">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "url" column = "VideoURL" type = "string"/>
+      
+   </class>
+</hibernate-mapping>
